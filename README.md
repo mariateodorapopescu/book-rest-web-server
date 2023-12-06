@@ -1,85 +1,51 @@
-# REST-API book/library web server 🌐✨
+# REST API library/reader-subscriber/book web server 📚✨
 
-Welcome to the enchanting world of Network Magic, where packets dance, routers weave spells, and network processing becomes a whimsical adventure! 🧙‍♂️ This repository is a collection of enchanting functions that add a touch of magic to network packet processing.
+Welcome to LibraConnect, your gateway to a world of literary wonders! This repository showcases the fantastic Homework 4 project, where we've created a seamless client-server interaction for a library system.
 
-## Overview 🪄
+## Project Inspiration 🌟
+Built upon the foundation of lab9 from the PCOM course, LibraConnect is a labor of inspiration and innovation. We've added our touch, introducing a `compute_delete_request` function and refining request types to seamlessly integrate JWT tokens. The magic of JSON object parsing comes alive with the Parson library by Kgabis, adding an extra layer of brilliance to the project.
 
-Explore the mystical spells and incantations that bring this network magic to life:
+## Dive into Testing 🚀
+Curious minds, rejoice! Explore the journey of LibraConnect through hands-on testing.
 
-### Function Spells 🪄
+## Unveiling the Code Symphony 🎶
+### Main Function
+Embark on the adventure with the `main` function, orchestrating the program's dance of variables, memory allocation, user command processing, and graceful termination.
 
-1. **arp_req:**
-   - Summon an ARP request packet that dances into the world, announcing its presence to all. Crafted with care and a touch of magic.
+### Function: code
+The heartbeat of LibraConnect, the `code` function, translates command strings into a symphony of command codes. A harmonious dance of commands awaits!
 
-2. **arp_rpl:**
-   - Craft an ARP reply packet inspired by the original ARP request. Weave a response, creating new structures to mirror the magical dance of information.
+### Function: remove_whitespace
+Join the rhythm of the `remove_whitespace` function, elegantly sweeping away unnecessary characters and creating a clean canvas for commands.
 
-3. **reimpachetare:**
-   - Unleash the power to repackage a packet from scratch! Modify and zeroize as needed, creating a new concoction with fresh enchantments.
+### Function: extract_cookie_elements
+Watch as `extract_cookie_elements` gracefully separates cookie elements, ensuring a delightful array of tokens for smooth interactions.
 
-4. **merge and merge2:**
-   - Invoke the binary sorting spell to gracefully sort the ARP table, merging and combining entries like a symphony of sorted spirits.
+### Function: get_last_line
+Step into the spotlight with `get_last_line`, stealing the scene as it finds the last line containing a target substring – a true hero in the search for relevance.
 
-5. **merge_sort and merge_sort2:**
-   - Let the sorting enchantment flow through routing tables and ARP tables, creating harmony in the order of elements.
+### Function: print_fields
+A crescendo of elegance, the `print_fields` function serenades the user with JSON array melodies, printing the enchanting values of selected fields.
 
-6. **bin_src and bin_src2:**
-   - Cast a binary search spell on routing and ARP tables, seeking the mysterious entry that matches the sought-after IP address.
+### Exit Handler: A Graceful Finale
+In the grand finale, the `exit_handler` gracefully exits the stage, leaving behind the echo of "204 - No Content." A standing ovation for a successful performance!
 
-7. **icmp_rpl:**
-   - Conjure an ICMP Echo Reply packet, carefully selecting and crafting a response to the original ICMP packet.
+## User Commands: A Tale of Interaction 📜
+- **register_handler**: A saga of user registration, where characters come to life with prompts for username and password, creating a JSON object that sets the stage for a unique tale.
 
-8. **icmp_te:**
-   - Transform a packet into an ICMP Time Exceeded message! A variant of the ICMP spell, but with a twist of time.
+- **login_handler**: Witness the protagonist's journey through user login, overcoming challenges, and acquiring the precious JWT token – a key to the library kingdom.
 
-9. **icmp_dur:**
-   - A variation of the ICMP spell, this one crafts a Destination Unreachable packet. Let the unreachable destinations be known!
+- **enter_handler**: A mystical journey into the restricted library area, where the protagonist's authorization is put to the test, and the coveted JWT token unfolds the story.
 
-### Main Incantations 🧙‍♂️🔮
+- **get1_handler**: A delightful quest to retrieve a list of books, where the protagonist's authorization and token become the magic carpet for exploring the library's literary treasures.
 
-Dive into the main enchantments, where packets traverse the mystical realms:
+- **get2_handler**: A personalized adventure to retrieve details about a specific book, unfolding a unique chapter for each book ID entered by the user.
 
-1. **ipv4:**
-   - Unravel the secrets of IPv4 as you journey through ICMP, checksums, TTL, and routing tables. A world where Time To Live dances on the edge.
+- **add_handler**: The protagonist's creative journey to add a new book to the library, overcoming challenges and contributing to the expanding universe of literary works.
 
-2. **lpm:**
-   - Explore the Longest Prefix Match incantation, rewriting the physical address of a packet for the correct redirection.
+- **delete_handler**: A dramatic turn in the storyline as the protagonist faces the challenge of removing a book from the library, with authorization and book ID playing pivotal roles.
 
-3. **rescriere adresa fizica:**
-   - Watch as the MAC address of the next hop is unveiled, and the packet finds its new path through the network.
+- **logout_handler**: The hero's graceful exit from the library, bidding farewell with a successful logout and a promise of more adventures to come.
 
-4. **trimitere pachet:**
-   - Send forth the packet into the ether, ensuring it finds its way through the enchanted network interfaces.
-
-5. **arp:**
-   - Engage in the dance of ARP packets, updating the ARP table with each encounter and weaving a tale of MAC addresses.
-
-May your packets find their paths, and your routers guide them with grace and magic! ✨📡🌌
-
-## How to Use 📘
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/network-magic.git
-   cd network-magic
-   ```
-
-2. **Explore the Spells:**
-   - Delve into the `spells` directory to find the enchanting functions.
-   - Feel free to mix and match, creating your own magical network concoctions!
-
-3. **Main Incantations:**
-   - The `main` directory holds the main incantations. Explore the realms of IPv4 and other mystical entities.
-
-4. **Run the Magic:**
-   - Use the provided instructions to run the spells and main incantations. Watch the magic unfold!
-
-## Showcase 🌟
-
-Visit the [Network Magic Showcase](https://your-magic-showcase-url.com) to witness the mesmerizing results of these enchanting spells. View screenshots, examples, and experience the magic firsthand!
-
-## Contribute ✨
-
-Join the coven of contributors and add your magical touch to the Network Magic. Feel free to open issues, create pull requests, or share your own magical spells with the community.
-
-May your networks be magical, and your packets full of enchantment! 🌐✨
+## Join the LibraConnect Symphony! 🎭
+LibraConnect invites you to witness the magic, contribute to the story, and explore the vast world of possibilities in the realm of client-server interactions. Let the adventure begin! 🚀
